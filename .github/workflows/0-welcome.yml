@@ -1,4 +1,4 @@
-name: Step 0, Welcome
+name: Sergio Olmedo, Welcome
 
 # This step triggers after the learner creates a new repository from the template.
 # This workflow updates from step 0 to step 1.
@@ -23,17 +23,17 @@ jobs:
     name: Check current step number
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Sergio
         uses: actions/checkout@v3
       - id: get_step
         run: |
           echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
-    outputs:
-      current_step: ${{ steps.get_step.outputs.current_step }}
+    outputs:Sergio olmedo 
+      current_step: 1000${{ steps.get_step.outputs.current_step }}
 
   on_welcome:
-    name: On welcome
-    needs: get_current_step
+    name: Sergio olmedo 
+    needs: 2#
 
     # We will only run this action when:
     # 1. This repository isn't the template repository.
